@@ -1,0 +1,79 @@
+.align {margin: auto; width: 50%; 
+    border: 5px double red; padding: 20px;}
+
+
+    .text{ text-align: center; 
+        color: brown;background-color: blue;
+        border: 3px solid red ;padding:5px; margin: 20px;
+    }
+
+img{ margin: auto;display:block; 
+    border: solid green 5px;
+    padding: 10px;}
+
+img:hover {opacity: 0.8;}
+
+
+div {
+    background-color:rgb(4,170,109);
+    color: white;
+    text-align: center;
+  }
+
+  div.first {background: rgba(4, 170, 109, 0.1);}
+  div.second {background: rgba(4, 170, 109, 0.3);}
+
+  div:hover {background-color: black;
+}
+
+div:hover p{ display: block;}
+
+/*The ::first-letter Pseudo-element*/
+
+p::first-letter {
+    color: #ff0000;
+        font-size: xx-large;}
+        
+/*The ::first-letter Pseudo-element*/
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;}
+
+
+            ul {list-style-type: none;
+                margin: 0;
+                padding: 0; width: 100px;background-color: #f1f1f1;
+                border: 3px solid #555;
+                
+                /* Full height */
+                 /* Make it stick, even on scroll */
+                /* Enable scrolling if the sidenav has too much content */
+              }
+
+                li a {display: block; background-color:
+                     blue; color: aliceblue;}
+                    
+        /* Change the link color on hover */
+    
+                   li a:hover {background-color: #ff0000; 
+                    color: white;}
+
+                    li a.active {
+                        background-color: #04AA6D;
+                        color: white;
+                      }
+                      
+                      li a:hover:not(.active) {
+                        background-color: red;
+                        color: white;
+                      }
+
+                      
+li {
+    text-align: center;
+    border-bottom: 3px solid greenyellow;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
