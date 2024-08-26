@@ -1,79 +1,72 @@
-.align {margin: auto; width: 50%; 
-    border: 5px double red; padding: 20px;}
-
-
-    .text{ text-align: center; 
-        color: brown;background-color: blue;
-        border: 3px solid red ;padding:5px; margin: 20px;
+    
+    
+    
+    :root{ --blue: #6495ed;
+      --white:#faf0e6 --black: --red:; 
     }
-
-img{ margin: auto;display:block; 
-    border: solid green 5px;
-    padding: 10px;}
-
-img:hover {opacity: 0.8;}
-
-
-div {
-    background-color:rgb(4,170,109);
-    color: white;
-    text-align: center;
+    
+   * {
+    box-sizing: border-box;
   }
+   
+   body {margin:0;}
 
-  div.first {background: rgba(4, 170, 109, 0.1);}
-  div.second {background: rgba(4, 170, 109, 0.3);}
-
-  div:hover {background-color: black;
+.header {padding: 10px; text-align: center; 
+    background-color:var(--blue);
 }
 
-div:hover p{ display: block;}
 
-/*The ::first-letter Pseudo-element*/
-
-p::first-letter {
-    color: #ff0000;
-        font-size: xx-large;}
-        
-/*The ::first-letter Pseudo-element*/
-        p::first-line {
-            color: #ff0000;
-            font-variant: small-caps;}
-
-
-            ul {list-style-type: none;
-                margin: 0;
-                padding: 0; width: 100px;background-color: #f1f1f1;
-                border: 3px solid #555;
-                
-                /* Full height */
-                 /* Make it stick, even on scroll */
-                /* Enable scrolling if the sidenav has too much content */
-              }
-
-                li a {display: block; background-color:
-                     blue; color: aliceblue;}
-                    
-        /* Change the link color on hover */
-    
-                   li a:hover {background-color: #ff0000; 
-                    color: white;}
-
-                    li a.active {
-                        background-color: #04AA6D;
-                        color: white;
-                      }
-                      
-                      li a:hover:not(.active) {
-                        background-color: red;
-                        color: white;
-                      }
-
-                      
-li {
+    /* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color:var(black);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: var(--blue);
     text-align: center;
-    border-bottom: 3px solid greenyellow;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color:var(--white);
+    color: var(--blue);
   }
 
-  li:last-child {
-    border-bottom: none;
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33% ;
+    padding: 15px;
+    background-color:var(--blue);
   }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .image { border: 1px; height: 200px;  max-width:100%;
+    border-radius:50px ;}
+
+  
+
+
+
+table,th,td {border: 1px solid green; 
+  border-collapse: collapse;background-color:
+   blueviolet; border-radius:20px ; border-right: groove;}
